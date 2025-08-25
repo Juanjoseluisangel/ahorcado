@@ -47,36 +47,5 @@ def eliminarpalabra():
           DELETE FROM base WHERE id = ?;''', (i,))
     BD.commit()
 
-def ventana():
-    ventana = CTkToplevel(app)
-    et = CTkLabel(ventana, text="eee")
-    ventana.title("Accion")
-    et.pack()
 
-def ventana2():
-    ventana = CTkToplevel(app)
-    et = CTkLabel(ventana, text="eee")
-    ventana.title("Informacion")
-    et.pack()
-
-def ventana3():
-    ventana = CTkToplevel(app)
-    et = CTkLabel(ventana, text="eee")
-    ventana.title("Jugar")
-    et.pack()
-
-
-
-app = CTk()
-app.title("sale ahoracdito")
-app.geometry("400x400")
-app.resizable(width=False, height=False)
-
-bt = CTkButton (app, text="Accion", command=ventana)
-bt2 = CTkButton (app, text="Informacion")
-bt3 = CTkButton (app, text="Jugar")
-bt4 = CTkButton (app, text="Generar nueva palabra")
-bt5 = CTkButton (app, text="Ingresar nueva palabra")
-et = CTkLabel(app, text="esta opcion generara una nueva palabra para el juego y reiniciara los intentos")
-et2 = CTkLabel(app, text="esta opcion permite ingresar una nueva palabra para el juego")
 
